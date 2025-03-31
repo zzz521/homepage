@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  # 拉取代码
+        uses: actions/checkout@v4  # 拉取代码 下载代码到runner中，actions/checkout@v4是官方的package
 
       - name: Install Node.js
         uses: actions/setup-node@v4 # 打包构建

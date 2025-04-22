@@ -50,8 +50,8 @@ onMounted(() => {
     }
 
     .header-btn {
-        @apply cursor-pointer absolute bottom-[20px];
-        animation: btn-pulse 1.5s infinite;
+        @apply cursor-pointer absolute animate-[btn-pulse_1.5s_infinite];
+        // animation: btn-pulse 1.5s infinite;
     }
 
     @keyframes btn-pulse {

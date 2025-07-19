@@ -1,7 +1,9 @@
 <template>
     <div class="header-render">
-        <h1 class="header-title">Geek空间</h1>
-        <p class="header-desc" ref="desc" />
+        <h1 class="header-title">
+            Geek空间
+        </h1>
+        <p ref="desc" class="header-desc" />
 
         <svg width="24" height="24" class="header-btn">
             <use href="#icon-ArrowDown" />
@@ -10,8 +12,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
 import TypeIt from 'typeit';
+import { onMounted, ref } from 'vue';
 
 const desc = ref<HTMLElement>();
 
@@ -27,15 +29,12 @@ const initHeaderDesc = () => {
             breakLines: false,
         }).go();
     }
-}
-
+};
 
 onMounted(() => {
     initHeaderDesc();
 });
-
 </script>
-
 
 <style lang="scss">
 .header-render {
@@ -46,7 +45,7 @@ onMounted(() => {
     }
 
     .header-desc {
-        @apply mt-4 text-gray-90;
+        @apply mt-4 text-gray-900;
     }
 
     .header-btn {

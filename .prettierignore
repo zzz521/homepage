@@ -1,0 +1,22 @@
+# 忽略构建输出
+dist/
+build/
+coverage/
+
+# 忽略依赖
+node_modules/
+
+# 忽略配置文件
+*.config.js
+*.config.ts
+.eslintrc.cjs
+
+# 忽略自动生成的文件
+*.d.ts
+yarn.lock
+package-lock.json
+
+# 忽略特定文件
+public/
+.vscode/
+.git/
